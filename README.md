@@ -1,34 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+    # MerkeMe
 
-## Getting Started
+    This is an exploratory project to build a backend solution for generating Merkle trees for a given list of addresses (a whitelist). Lots of folks are needing whitelists for their NFT projects and typically have to go through the extra steps of generating a Merkle tree and then running a backend to verify proofs on the fly. These steps also require knowledge of Merkle trees to implement them.
 
-First, run the development server:
+    The idea behind this project is to abstract away the Merkle tree process and simply provide a front end solution that allows anyone to copy + paste their whitelist into a form and click a button to automagically generate their Merkle Tree.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+    Once the Merkle tree is created, the developer only needs to add the root hash and the OpenZeppelin [MerkleProof library](https://docs.openzeppelin.com/contracts/3.x/api/cryptography#MerkleProof) to their minting contract. The developer's front end will then be able to grab a user's address (likely from their wallet) and use it to generate a Merkle proof on the fly for that given address via the MerkeMe backend API.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    With a Merkle proof in hand, the frontend can then submit a transaction to the minting contract to attempt minting. The OpenZeppelin MerkleProof contract requires the proof, root and leaf:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+    ```
+    verify(bytes32[] proof, bytes32 root, bytes32 leaf) → bool
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+    ```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    ## MerkleMe Overview
+    ![MerkleMe Overview](https://github.com/nfgenes/merkleme/blob/main/public/assets/merkleme_overview.png)
