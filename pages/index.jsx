@@ -10,7 +10,7 @@ export default function Home() {
         <div className={styles.treeImgContain}>
           <Image
             src={landingPageData.treeImg}
-            width="76px"
+            width="50px"
             height="69px"
             className={styles.tree}
             alt="tree"
@@ -35,6 +35,7 @@ export default function Home() {
         </section>
 
         <section className={styles.rightSection}>
+          <div className={styles.handcraftImgContainer}>
           <Image
             src={landingPageData.handcraftImg}
             width="344.27px"
@@ -42,6 +43,7 @@ export default function Home() {
             className={styles.handcraftImg}
             alt="handcraftImg"
           />
+          </div>
         </section>
       </main>
     </div>

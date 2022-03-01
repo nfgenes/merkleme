@@ -13,7 +13,7 @@
   flex: 0.2;
 }
 .treeImgContain {
-  padding-top: 38px;
+  padding-top: 6px;
   margin-left: 66px;
 }
 .tree {
@@ -24,11 +24,11 @@
   font-family: Vibur;
   font-style: normal;
   font-weight: normal;
-  font-size: 50px;
+  font-size: 30px;
   line-height: 72px;
-  margin-left: 23px;
+  margin-left: 16px;
+  padding-top: 17px;
   cursor: pointer;
-  padding-top: 48px;
   color: var(--black);
 }
 
@@ -77,6 +77,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.2);
 
   font-family: Lato;
   font-style: normal;
@@ -89,4 +91,59 @@
 
 .rightSection {
   padding-right: 5%;
+}
+
+
+
+/* Responsive Styles to hero */
+
+/* Mobile Styles */
+@media screen and (max-width: 414px) {
+  
+  .handcraftImgContainer {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 150px;
+    margin-left: 33%;
+    margin-top: 350px;
+
+  }
+
+  .heroContainer{
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+  }
+
+  .treeImgContain {
+    margin-bottom: 5%;
+    margin-left: 10%;
+    width: 41px;
+  }
+
+  .title {
+    margin-bottom: 6%;
+    font-size: 22px;
+  }
+
+  .heroHeading {
+    text-align: center;
+    padding-right: 30px;
+    margin-right: 10%;
+    margin-bottom: 300px;
+    font-size: 45px;
+  }
+
+  .heroSubheading {
+    font-size: 20px;
+    margin-left: 5%;
+  }
+
+  .ctaBtn {
+    margin-bottom: 20%;
+    margin-left: 9%;
+  }
+
+
 }
