@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { landingPageData } from "../data/landingpage";
 import styles from "../styles/Home.module.css";
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -30,8 +31,9 @@ export default function Home() {
           <div className={styles.heroSubheading}>
             {landingPageData.heroSubheading}
           </div>
-
+          <Link href="/form">
           <button className={styles.ctaBtn}>{landingPageData.ctaBtn}</button>
+          </Link>
         </section>
 
         <section className={styles.rightSection}>
