@@ -33,4 +33,8 @@ contract MyToken is ERC721, Ownable {
         _tokenIdCounter.increment();
         _safeMint(to, tokenId);
     }
+
+    function modifyRootHash(bytes32 _rootHash) public onlyOwner {
+        rootHash = _rootHash;
+    }
 }
