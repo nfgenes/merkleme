@@ -1,7 +1,93 @@
 /* NavBar Styles */
 
-.addressNav {
-    display: flex;
-    align-items: center;
-    flex: 0.2;
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  flex: 0.2;
+}
+
+.treeImgContain {
+  padding-top: 6px;
+  margin-left: 66px;
+}
+
+.treeImg {
+  object-fit: contain;
+}
+
+.title {
+  font-family: Vibur;
+  font-size: 30px;
+  line-height: 72px;
+  margin-left: 16px;
+  padding-top: 17px;
+  cursor: pointer;
+  color: var(--black);
+}
+
+.addressSection {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 61px;
+
+  color: #000000;
+}
+
+.addressFormSection {
+  /* max-width: 347px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 2%;
+}
+
+.textarea {
+  border: 4px solid #000000;
+  box-sizing: border-box;
+  filter: drop-shadow(1px 1px 7px #8f9fef);
+  border-radius: 9px;
+  padding: 10px;
+  font-family: Montserrat;
+}
+
+.nextStyles {
+  width: 150px;
+  height: 50px;
+
+  background-color: var(--purple);
+  border-radius: 7px;
+  border: none;
+  appearance: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.2);
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 36px;
+
+  color: #ffffff;
 }

@@ -1,182 +1,198 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 /* Navbar Styles */
 .nav {
-    display: flex;
-    align-items: center;
-    flex: 0.2;
+  display: flex;
+  align-items: center;
+  flex: 0.2;
 }
 
 .treeImgContain {
-    padding-top: 6px;
-    margin-left: 66px;
+  padding-top: 6px;
+  margin-left: 66px;
 }
 
 .treeImg {
-    object-fit: contain;
+  object-fit: contain;
 }
 
 .title {
-    font-family: Vibur;
-    font-size: 30px;
-    line-height: 72px;
-    margin-left: 16px;
-    padding-top: 17px;
-    cursor: pointer;
-    color: var(--black);
+  font-family: Vibur;
+  font-size: 30px;
+  line-height: 72px;
+  margin-left: 16px;
+  padding-top: 17px;
+  cursor: pointer;
+  color: var(--black);
 }
 
 /* Main Section Styles */
 
-/* .heroSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-} */
-
-.heroContainer {
-    margin-top: 2%;
-    margin-left: 15%;
+.heroMain {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .heroHeading {
-    font-family: Montserrat;
-    font-weight: 600;
-    font-size: 50px;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 50px;
 }
 
 .collectionTitle {
-    color: #bbb8b8;
-    text-align: center;
-    margin-right: 32px;
-    margin-top: 10%;
-    font-size: 25px;
-    font-weight: 400;
-    font-family: Montserrat;
+  color: #bbb8b8;
+  text-align: center;
+
+  font-size: 25px;
+  font-weight: 400;
+  font-family: Montserrat;
+  width: 100%;
+  text-align: start;
 }
+
+/* form section */
 
 /* Progress Bar Styling */
 .progressBarWrapper {
-    display: flex;
-    margin-left: 50px;
-    margin-top: 70px;
+  display: flex;
+
+  margin-top: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 25px;
 }
 
 .progressBarOne {
-    border: 2px solid #8F9FEF;
-    background-color: #8F9FEF;
-    border-radius: 10px;
-    margin: 0 auto 0 580px;
-    height: 10px;
-    width: 7%;
+  border: 2px solid #8f9fef;
+  background-color: #8f9fef;
+  border-radius: 10px;
+  height: 10px;
+  width: 119px;
 }
 
 .progressBarTwo {
-    border: 2px solid #C4C4C4;
-    width: 7%;
-    margin: 0 auto 0 -610px;
-    border-radius: 10px;
+  border: 2px solid #c4c4c4;
+  background-color: white;
+  border-radius: 10px;
+  height: 10px;
+  width: 119px;
 }
 
 /* Form Styling */
 
-
 /* Collection Form Styling */
+
+.formSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
 .formStyles {
-    display: flex;
-    flex-direction: column;
-    margin-top: -5%;
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  justify-content: center;
+  gap: 45px;
 }
 
 .labelWrapper {
-    margin: auto;
+  margin-top: 15px;
 }
 
 .collectionForm {
-    margin-left: 5%;
-    margin-top: 2%;
-    height: 55px;
-    width: 410px;
-    border-radius: 5px;
-    font-size: 30px;
-    font-family: Montserrat;
+  height: 55px;
+  width: 410px;
+  border-radius: 5px;
+  font-size: 30px;
+  font-family: Montserrat;
 }
 
 .collectionForm:focus {
-    border: none;
-    outline: 2px solid #8F9FEF;
-    box-shadow: 1px 1px 10px 2px #8F9FEF;
+  border: none;
+  outline: 2px solid #8f9fef;
+  box-shadow: 1px 1px 10px 2px #8f9fef;
 }
 
 .emailForm:focus {
-    border: none;
-    outline: 2px solid #8F9FEF;
-    box-shadow: 1px 1px 10px 2px #8F9FEF;
+  border: none;
+  outline: 2px solid #8f9fef;
+  box-shadow: 1px 1px 10px 2px #8f9fef;
 }
 
 /* Email Form Styling */
 .emailStyles {
-    color: #bbb8b8;
-    text-align: center;
-    margin-right: 12%;
-    margin-top: 5%;
-    font-size: 25px;
-    font-weight: 400;
-    font-family: Montserrat;
+  color: #bbb8b8;
+  text-align: center;
+
+  font-size: 25px;
+  font-weight: 400;
+  font-family: Montserrat;
+  width: 100%;
+  text-align: start;
 }
 
 .emailForm {
-    margin-left: 5%;
-    margin-top: 2%;
-    height: 55px;
-    width: 410px;
-    border-radius: 5px;
-    font-size: 30px;
-    font-family: Montserrat;
+  height: 55px;
+  width: 410px;
+  border-radius: 5px;
+  font-size: 30px;
+  font-family: Montserrat;
 }
 
 .nextStyles {
-    width: 150px;
-    height: 50px;
-    margin-right: 20px;
-    margin-top: 65px;
-    background-color: var(--purple);
-    border-radius: 7px;
-    border: none;
-    appearance: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.2);
+  width: 150px;
+  height: 50px;
+  margin-right: 20px;
+  margin-top: 65px;
+  background-color: var(--purple);
+  border-radius: 7px;
+  border: none;
+  appearance: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.2);
 
-    font-family: Lato;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 36px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 36px;
 
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .buttonWrapper {
-    margin: auto;
-    width: 8%;
+  margin: auto;
+  width: 8%;
 }
-
 
 /* Responsive Styles */
 
 @media screen and (max-width: 375px) {
-    
+  .heroHeading {
+    width: 719px;
+    margin-top: 89px;
+    font-size: 60px;
+  }
 
-    .heroHeading {
-        width: 719px;
-        margin-top: 89px;
-        font-size: 60px;
-    }
-
-    .progressBarWrapper {
-        margin-right: 20px;
-    }
+  .progressBarWrapper {
+    margin-right: 20px;
+  }
 }
