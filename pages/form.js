@@ -29,91 +29,91 @@ export default function Form() {
   return (
     <div className={styles.container}>
       {/* Navbar Section */}
-      <nav className={styles.nav}>
+    <nav className={styles.nav}>
         <div className={styles.treeImgContain}>
-          <Image
+        <Image
             src={informationData.treeImg}
             width="50px"
             height="69px"
             alt="treeImg"
             className={styles.treeImg}
-          />
+        />
         </div>
         <div className={styles.title}>{informationData.title}</div>
-      </nav>
+    </nav>
 
       {/* Hero Section */}
-      <main className={styles.heroMain}>
+    <main className={styles.heroMain}>
         <section className={styles.heroSection}>
-          <div className={styles.heroContainer}>
+        <div className={styles.heroContainer}>
             <div className={styles.heroHeading}>{informationData.heading}</div>
-          </div>
+        </div>
 
-          <section className={styles.formContainer}>
+        <section className={styles.formContainer}>
             <div className={styles.progressBarWrapper}>
-              <div className={styles.progressBarOne}></div>
-              <div className={styles.progressBarTwo}></div>
+            <div className={styles.progressBarOne}></div>
+            <div className={styles.progressBarTwo}></div>
             </div>
 
             {/* Form Section */}
             <form
-              ref={formRef}
-              className={styles.formSection}
-              onSubmit={(e) => saveAndRedirect(e)}
+            ref={formRef}
+            className={styles.formSection}
+            onSubmit={(e) => saveAndRedirect(e)}
             >
-              <div className={styles.formStyles}>
+            <div className={styles.formStyles}>
                 <div>
-                  <label className={styles.collectionTitle} htmlFor="name">
+                <label className={styles.collectionTitle} htmlFor="name">
                     {informationData.collectionTitle}
-                  </label>
-                  <div className={styles.labelWrapper}>
+                </label>
+                <div className={styles.labelWrapper}>
                     <input
-                      type="text"
-                      name="collectionName"
-                      className={styles.collectionForm}
-                      value={userData.collectionName}
-                      onChange={(e) =>
+                    type="text"
+                    name="collectionName"
+                    className={styles.collectionForm}
+                    value={userData.collectionName}
+                    onChange={(e) =>
                         setUserData({
-                          ...userData,
-                          collectionName: e.target.value,
+                        ...userData,
+                        collectionName: e.target.value,
                         })
-                      }
-                      required
+                    }
+                    required
                     />
-                  </div>
+                </div>
                 </div>
                 {/* Tagging for the email form*/}
                 <div>
-                  <label className={styles.emailStyles} htmlFor="email">
+                <label className={styles.emailStyles} htmlFor="email">
                     {informationData.emailTitle}
-                  </label>
-                  <div className={styles.labelWrapper}>
+                </label>
+                <div className={styles.labelWrapper}>
                     <input
-                      type="email"
-                      name="email"
-                      className={styles.emailForm}
-                      value={userData.email}
-                      onChange={(e) =>
+                    type="email"
+                    name="email"
+                    className={styles.emailForm}
+                    value={userData.email}
+                    onChange={(e) =>
                         setUserData({
-                          ...userData,
-                          email: e.target.value,
+                        ...userData,
+                        email: e.target.value,
                         })
-                      }
+                    }
                     />
-                  </div>
                 </div>
-              </div>
-              <div className={styles.buttonWrapper}>
+                </div>
+            </div>
+            <div className={styles.buttonWrapper}>
                 {/* <Link href="/address" passHref={true}> */}
                 <button className={styles.nextStyles}>
-                  {informationData.nextButton}
+                {informationData.nextButton}
                 </button>
                 {/* </Link> */}
-              </div>
+            </div>
             </form>
-          </section>
         </section>
-      </main>
+        </section>
+    </main>
     </div>
-  );
+);
 }
