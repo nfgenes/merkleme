@@ -1,0 +1,7 @@
+/* NavBar Styles */
+
+.addressNav {
+    display: flex;
+    align-items: center;
+    flex: 0.2;
+}
