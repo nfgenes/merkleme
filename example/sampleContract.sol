@@ -6,6 +6,14 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
 
+/*
+ * THIS SAMPLE CONTRACT IS NOT A PRODUCTION READY CONTRACT
+ * ////////////////////////////////////////////////////////
+ * It is provided only to demonstrate a way to implement the
+ * OpenZeppelin MerkleProof contract for verifying a proof
+ * provide by the MerkleMe backend API
+*/
+
 contract MyToken is ERC721, Ownable {
     using Counters for Counters.Counter;
 
