@@ -120,12 +120,16 @@
   border-radius: 5px;
   font-size: 30px;
   font-family: Montserrat;
+  padding: 10px;
 }
 
 .collectionForm:focus {
   border: none;
   outline: 2px solid #8f9fef;
   box-shadow: 1px 1px 10px 2px #8f9fef;
+}
+.emailForm {
+  padding: 10px;
 }
 
 .emailForm:focus {

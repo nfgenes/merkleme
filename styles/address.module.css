@@ -91,3 +91,20 @@
 
   color: #ffffff;
 }
+
+.userData {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px 50px;
+}
+
+.userData div {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 61px;
+
+  color: #000000;
+}
