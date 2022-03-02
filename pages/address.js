@@ -1,8 +1,33 @@
 import { addressPage } from "../data/addresspage";
 import Image from "next/image";
 import styles from "../styles/address.module.css";
+import useGlobalState from "../store/global";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 export default function Address() {
+  const [userDataAvailable, setUserDataAvailable] = useState(false);
+  const { email, collectionName } = useGlobalState();
+  const router = useRouter();
+
+  useEffect(() => {
+    let mount = true;
+
+    if (mount) {
+      if (!collectionName) {
+        router.push("/form");
+        setUserDataAvailable(false);
+      } else {
+        setUserDataAvailable(true);
+      }
+    }
+    return () => {
+      mount = false;
+    };
+  }, [collectionName, router]);
+
+  if (!userDataAvailable) return null;
+
   return (
     <main className={styles.main}>
       <nav className={styles.nav}>
@@ -19,6 +44,10 @@ export default function Address() {
       </nav>
 
       <section className={styles.addressSection}>
+        <div className={styles.userData}>
+          <div>Collection name: {collectionName}</div>
+          {email && <div>Email: {email}</div>}
+        </div>
         <div className={styles.heading}>{addressPage.addressHeading}</div>
 
         <div className={styles.addressFormSection}>
