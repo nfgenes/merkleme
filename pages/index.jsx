@@ -18,6 +18,11 @@ export default function Home() {
           />
         </div>
         <div className={styles.title}>{landingPageData.title}</div>
+        <div className={styles.aboutStyle}>{landingPageData.aboutTitle}</div>
+        <div className={styles.teamStyle}>{landingPageData.teamTitle}</div>
+        <Link href="/documentation">
+        <div className={styles.documentationStyle}>{landingPageData.documentationTitle}</div>
+        </Link>
       </nav>
 
       {/* Beginning of hero section */}

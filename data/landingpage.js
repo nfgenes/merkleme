@@ -5,4 +5,7 @@ export const landingPageData = {
   heroSubheading: "Generate. Publish. Verify.",
   ctaBtn: "Get Started ",
   handcraftImg: "/assets/handcraft.png",
+  aboutTitle: "About",
+  teamTitle: "Team",
+  documentationTitle: "Documentation",
 };

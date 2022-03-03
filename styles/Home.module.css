@@ -14,8 +14,9 @@
 }
 .treeImgContain {
   padding-top: 6px;
-  margin-left: 66px;
+  margin-left: 67px;
 }
+
 .tree {
   object-fit: contain;
 }
@@ -30,6 +31,32 @@
   padding-top: 17px;
   cursor: pointer;
   color: var(--black);
+}
+
+.aboutStyle {
+  font-family: Montserrat;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 12px;
+  margin-right: 24px;
+  margin-left: 900px;
+}
+
+.teamStyle {
+  font-family: Montserrat;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 12px;
+  margin-right: 24px;
+}
+
+.documentationStyle {
+  font-family: Montserrat;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* main section */

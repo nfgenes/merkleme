@@ -1,0 +1,28 @@
+/* Navbar styling */
+
+.documentationNavbar {
+    display: flex;
+    align-items: center;
+    flex: 0.2;
+}
+
+.treeImgContain {
+    padding-top: 6px;
+    margin-left: 67px;
+}
+
+.tree {
+    object-fit: contain;
+}
+
+.documentationTitle {
+    font-family: Vibur;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 72px;
+    margin-left: 11px;
+    padding-top: 17px;
+    cursor: pointer;
+    color: var(--black);
+}
