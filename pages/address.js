@@ -10,14 +10,21 @@ export default function Address() {
   const [userDataAvailable, setUserDataAvailable] = useState(false);
   const { email, collectionName } = useGlobalState();
   const router = useRouter();
-  const [whitelist, setWhitelist] = useState([]);
+  const [whitelist, setWhitelist] = useState(' ');
 
   const generateMerkleProof = async (email, whitelist) => {
     try {
+      console.log(whitelist, 'WHITE LIST str -------');
+      let doubleQuotesRemoved = whitelist.replaceAll('"', '');
+      let singleQuotesRemoved = doubleQuotesRemoved.replaceAll('\'', '');
+      let lineBreaksRemoved = singleQuotesRemoved.replaceAll(/\r?\n|\r/g, '')
+      let spacesRemoved = lineBreaksRemoved.replaceAll(' ', '').trim();
+      const whitelistArray = spacesRemoved.split(',');
+      console.log(whitelistArray, 'WHITE LIST ARRAY ][][][][][');
       let data = {
         "collectionName": collectionName,
         "userEmail": email,
-        "data": whitelist,
+        "data": whitelistArray,
       }
       const response = await axios.post('https://merklemeapi.vincanger.repl.co/merkleTree/generate ', data);
       console.log(response);
@@ -74,7 +81,7 @@ export default function Address() {
             cols="40"
             className={styles.textarea}
             value={whitelist}
-            onChange={(e) => setWhitelist([e.target.value])}
+            onChange={(e) => setWhitelist(e.target.value)}
           ></textarea>
 
           <div className={styles.buttonWrapper}>
