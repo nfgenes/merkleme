@@ -6,11 +6,19 @@ const useGlobalState = create((set) => {
     email: "d25thbamm@gmail.com",
     collectionName: "",
     addresses: [],
+    merkleProof: {},
     updateEmailAndName: (value) => {
       set(
         produce((state) => {
           state.email = value.email;
           state.collectionName = value.collectionName;
+        })
+      );
+    },
+    updateMerkleProof: (value) => {
+      set(
+        produce((state) => {
+          state.merkleProof = value;
         })
       );
     },
