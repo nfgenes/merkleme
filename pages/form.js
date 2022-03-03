@@ -1,7 +1,6 @@
 import { informationData } from "../data/information";
 import Image from "next/image";
 import styles from "../styles/Form.module.css";
-import Link from "next/link";
 import useGlobalState from "../store/global";
 import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
