@@ -5,6 +5,7 @@ import useGlobalState from "../store/global";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import axios from 'axios';
+import Link from "next/link"
 
 export default function Address() {
   const [userDataAvailable, setUserDataAvailable] = useState(false);
@@ -78,9 +79,11 @@ export default function Address() {
           ></textarea>
 
           <div className={styles.buttonWrapper}>
+            <Link href="/success">
             <button onClick={() => generateMerkleProof(email, whitelist)} className={styles.nextStyles}>
               {addressPage.merkleButton}
             </button>
+            </Link>
           </div>
         </div>
       </section>
