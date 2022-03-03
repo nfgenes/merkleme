@@ -1,12 +1,20 @@
 import React from "react";
 import useGlobalState from "../store/global";
+import { successPageData } from "../data/successpage";
+import styles from "../styles/success.module.css";
 
 function Success() {
   const { merkleProof } = useGlobalState();
+  console.log(merkleProof);
 
   return (
     <div>
-      <h1>
+      <main className={styles.mainContainer}>
+        <h1 className={styles.successHeading}>{successPageData.successTitle}</h1>
+        <h2 className={styles.subHeading}>{successPageData.successSubHeading}</h2>
+      </main>
+
+      {/* <h1>
         whitelist: <a href={merkleProof.whitelist}>{merkleProof.whitelist}</a>
       </h1>
       <h1>
@@ -15,7 +23,11 @@ function Success() {
       <h1>
         treeSummary:{" "}
         <a href={merkleProof.treeSummary}>{merkleProof.treeSummary}</a>
-      </h1>
+      </h1> */}
+    <h3 className={styles.linkClass}>
+      whitelist: <a href={merkleProof.whitelist}>{merkleProof.whitelist}</a>
+    </h3>
+
     </div>
   );
 }
