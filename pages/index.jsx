@@ -4,6 +4,8 @@ import { landingPageData } from "../data/landingpage";
 import styles from "../styles/Home.module.css";
 import Link from 'next/link';
 
+import NavBar from "../components/navbar";
+
 export default function Home() {
   return (
     <div className={styles.home}>
@@ -17,12 +19,7 @@ export default function Home() {
             alt="tree"
           />
         </div>
-        <div className={styles.title}>{landingPageData.title}</div>
-        <div className={styles.aboutStyle}>{landingPageData.aboutTitle}</div>
-        <div className={styles.teamStyle}>{landingPageData.teamTitle}</div>
-        <Link href="/documentation">
-        <div className={styles.documentationStyle}>{landingPageData.documentationTitle}</div>
-        </Link>
+        <NavBar />
       </nav>
 
       {/* Beginning of hero section */}
