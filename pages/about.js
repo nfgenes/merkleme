@@ -9,12 +9,12 @@ export default function About() {
         <div>
             <nav className={styles.aboutNav}>
                 <div className={styles.treeContainer}>
-                    <Image 
+                    {/* <Image 
                     src={aboutPageData.treeImg}
-                    width="50px"
+                    width="60px"
                     height="69px"
                     alt="treeImg"
-                    className={styles.treeImg} />
+                    className={styles.treeImg} /> */}
                     <NavBar />
                 </div>
             </nav>

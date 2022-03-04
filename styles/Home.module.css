@@ -6,60 +6,6 @@
   min-height: 100vh;
 }
 
-/* Navbar styles */
-.navBar {
-  display: flex;
-  align-items: center;
-  flex: 0.2;
-}
-.treeImgContain {
-  padding-top: 6px;
-  margin-left: 67px;
-}
-
-.tree {
-  object-fit: contain;
-}
-
-.title {
-  font-family: Vibur;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 30px;
-  line-height: 72px;
-  margin-left: 16px;
-  padding-top: 17px;
-  cursor: pointer;
-  color: var(--black);
-}
-
-.aboutStyle {
-  font-family: Montserrat;
-  font-weight: 500;
-  cursor: pointer;
-  margin-top: 12px;
-  margin-right: 24px;
-  margin-left: 900px;
-  transition: 0.2s ease-in-out 0.2s;
-}
-
-.teamStyle {
-  font-family: Montserrat;
-  font-weight: 500;
-  cursor: pointer;
-  margin-top: 12px;
-  margin-right: 24px;
-}
-
-.documentationStyle {
-  font-family: Montserrat;
-  font-weight: 500;
-  cursor: pointer;
-  margin-top: 12px;
-  display: flex;
-  justify-content: flex-end;
-}
-
 /* main section */
 
 .main {
