@@ -12,6 +12,7 @@ function Success() {
       <main className={styles.mainContainer}>
         <h1 className={styles.successHeading}>{successPageData.successTitle}</h1>
         <h2 className={styles.subHeading}>{successPageData.successSubHeading}</h2>
+        <h4 className={styles.warningMessage}>{successPageData.successWarning}</h4>
       </main>
 
       {/* <h1>
@@ -25,7 +26,14 @@ function Success() {
         <a href={merkleProof.treeSummary}>{merkleProof.treeSummary}</a>
       </h1> */}
     <h3 className={styles.linkClass}>
-      whitelist: <a href={merkleProof.whitelist}>{merkleProof.whitelist}</a>
+      whitelist: <a target="_blank" href={merkleProof.whitelist}>{merkleProof.whitelist}</a>
+    </h3>
+    <h3>
+      rootHash: <a target="_blank" href={merkleProof.rootHash}>{merkleProof.rootHash}</a>
+    </h3>
+    <h3>
+      treeSummary:{" "}
+      <a target="_blank" href={merkleProof.treeSummary}>{merkleProof.treeSummary}</a>
     </h3>
 
     </div>
