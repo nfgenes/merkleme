@@ -9,19 +9,7 @@ import NavBar from "../components/navbar";
 export default function Home() {
   return (
     <div className={styles.home}>
-      <nav className={styles.navBar}>
-        <div className={styles.treeImgContain}>
-          <Image
-            src={landingPageData.treeImg}
-            width="50px"
-            height="69px"
-            className={styles.tree}
-            alt="tree"
-          />
-        </div>
         <NavBar />
-      </nav>
-
       {/* Beginning of hero section */}
       <main className={styles.main}>
         <section className={styles.leftSection}>

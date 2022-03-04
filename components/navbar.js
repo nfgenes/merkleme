@@ -1,10 +1,22 @@
 import Link from "next/link";
-import styles from '../styles/Home.module.css';
+import styles from '../styles/navbar.module.css';
+import Image from "next/image";
+import { landingPageData } from "../data/landingpage";
 
 export default function NavBar() {
     return (
         <>
-            <Link href="/">
+        <nav className={styles.navBar}>
+        <div className={styles.treeImgContain}>
+          <Image
+            src={landingPageData.treeImg}
+            width="60px"
+            height="69px"
+            className={styles.tree}
+            alt="tree"
+          />
+        </div>
+        <Link href="/">
                 <div className={styles.title}>MerkleMe</div>
             </Link>
             <Link href="/about">
@@ -19,6 +31,7 @@ export default function NavBar() {
             <Link href="/demo">
                 <div className={styles.documentationStyle}>Demo</div>
             </Link>
+        </nav>
         </>
     )
 }

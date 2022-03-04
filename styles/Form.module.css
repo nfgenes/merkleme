@@ -3,31 +3,6 @@
   display: flex;
   flex-direction: column;
 }
-/* Navbar Styles */
-.nav {
-  display: flex;
-  align-items: center;
-  flex: 0.2;
-}
-
-.treeImgContain {
-  padding-top: 6px;
-  margin-left: 66px;
-}
-
-.treeImg {
-  object-fit: contain;
-}
-
-.title {
-  font-family: Vibur;
-  font-size: 30px;
-  line-height: 72px;
-  margin-left: 16px;
-  padding-top: 17px;
-  cursor: pointer;
-  color: var(--black);
-}
 
 /* Main Section Styles */
 
