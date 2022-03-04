@@ -40,6 +40,7 @@
   margin-top: 12px;
   margin-right: 24px;
   margin-left: 900px;
+  transition: 0.2s ease-in-out 0.2s;
 }
 
 .teamStyle {
@@ -118,6 +119,12 @@
 
 .rightSection {
   padding-right: 5%;
+}
+
+
+/* Hover styles */
+.aboutStyle:hover {
+  color: var(--purple);
 }
 
 

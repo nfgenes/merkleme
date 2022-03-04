@@ -1,0 +1,117 @@
+/* Styles for the navbar */
+.demoNavbar {
+    display: flex;
+    align-items: center;
+    flex: 0.2;
+}
+
+.treeImgContainer {
+    padding-top: 6px;
+    margin-left: 67px;
+}
+
+.demoTree {
+    object-fit: contain;
+}
+
+.demoTitle {
+    font-family: Vibur;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 72px;
+    margin-left: 16px;
+    padding-top: 17px;
+    cursor: pointer;
+    color: var(--black)
+}
+
+/* Main section styles */
+.formStyles {
+    margin-left: 39%;
+    width: 50%;
+}
+
+.demoHeadingStyles {
+    font-size: 60px;
+    font-family: Montserrat;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.demoLabel {
+    color: #000000;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: Montserrat;
+    width: 100%;
+}
+
+.whitelistStyles {
+    font-size: 20px;
+    font-family: Montserrat;
+    width: 318px;
+    height: 41px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    border: 1px solid #b3b4bb;
+}
+
+.whitelistStyles:focus {
+    border: none;
+    outline: 2px solid #8f9fef;
+    box-shadow: 1px 1px 10px 2px #8f9fef;
+    border-radius: 5px;
+}
+
+.addressStyles {
+    color: #000000;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: Montserrat;
+    width: 100%;
+}
+
+.addressInput {
+    font-size: 20px;
+    font-family: Montserrat;
+    width: 318px;
+    height: 41px;
+    border-radius: 5px;
+    border: 1px solid #b3b4bb;
+}
+
+.addressInput:focus {
+    border: none;
+    outline: 2px solid #8f9fef;
+    box-shadow: 1px 1px 10px 2px #8f9fef;
+    border-radius: 5px;
+}
+
+.generateButtonStyles {
+    width: 218px;
+    height: 67px;
+    background-color: var(--purple);
+    border-radius: 7px;
+    border: none;
+    appearance: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 3%;
+    margin-left: 43%;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: #ffffff;
+}
+
+
