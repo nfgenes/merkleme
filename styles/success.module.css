@@ -1,19 +1,122 @@
+/* Main success styles */
+.mainContainer {
+    position: relative;
+}
+
+.checkContainer {
+    position: absolute;
+    margin-top: -0.0%;
+    top: 2%;
+    left: 8%;
+}
+
+.lineColor {
+    background-color: #c4c4c480;
+    border: none;
+    height: 1px;
+}
+
+.check {
+    object-fit: contain;
+}
+
 .successHeading {
+    font-size: 60px;
+    font-family: Montserrat;
     text-align: center;
-    margin-top: 7%;
+    margin-top: 5%;
 }
 
 .subHeading {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.363);
     text-align: center;
     margin-top: 2%;
 }
 
 .warningMessage {
+    font-family: Montserrat;
+    font-weight: 500;
+    color: red;
+    font-size: 12px;
     text-align: center;
-    margin-top: 3%;
+    margin-top: -1%;
 }
 
 .linkClass {
+    font-family: Montserrat;
+    font-weight: 400;
+    margin-left: 22%;
+    margin-top: 4%;
+}
+
+.rootLink {
+    font-family: Montserrat;
+    font-weight: 400;
+    margin-left: 22%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.treeLink {
+    font-family: Montserrat;
+    font-weight: 400;
+    margin-left: 22%;
+    margin-bottom: 6%;
+}
+
+.anchorStyles {
+    transition: .2s ease-in-out .2s;
+}
+
+.lineTwoColor {
+    background-color: #c4c4c480;
+    border: none;
+    height: 1px;
+}
+
+.headingFourWrapper {
+    margin-top: 5%;
+    margin-left: 38%;
+    width: 50%;
+}
+
+.demoHeadingStyles {
+    font-family: Montserrat;
+    font-weight: 500;
+    width: 330px;
     text-align: center;
-    margin-top: 3%;
+}
+
+/* Demo Button Styles */
+.demoButtonStyles {
+    width: 120px;
+    height: 50px;
+    margin-left: 45%;
+    margin-bottom: 50px;
+    background-color: var(--purple);
+    border-radius: 7px;
+    border: none;
+    appearance: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.2);
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 36px;
+
+    color: #ffffff;
+}
+
+
+/* Special Styles */
+.anchorStyles:hover {
+    color: var(--purple);
 }
