@@ -77,21 +77,25 @@ contract MyToken is ERC721, Ownable {
 1. Select the minting contract
 2. Deploy the contract while providing a root hash (which is provided to you by the MerkleMe API)
 
-![Deploy]()
+![Deploy](https://github.com/nfgenes/merkleme/blob/main/example/doc/sample_implementation_deploy.png)
 
 ## Review the contract instance
 
 Once the contract deploys, you can use the public getter functions to verify that the root hash is correct.
 
-![Expand the contract methods]()
+![Expand the contract methods](https://github.com/nfgenes/merkleme/blob/main/example/doc/sample_implementation_expand.png)
 
-![Check the root hash]()
+![Check the root hash](https://github.com/nfgenes/merkleme/blob/main/example/doc/sample_implementation_rootHash.png)
 
 If the root hash is not correct, or if it needs to be changed, you can modify it via the modifyRootHash() method. Simply supply a new root hash and submit the contract transaction
 
 ## Verify a Proof
 
-Call the mintMyToken() method in the contract and supply the proof provided above as the required argument. This should result in a successful validation and subsequent minting.
+Call the mintMyToken() method in the contract and supply the proof provided above as the required argument.
+
+![Mint](https://github.com/nfgenes/merkleme/blob/main/example/doc/sample_implementation_mint.png)
+
+This should result in a successful validation and subsequent minting.
 
 ```
 status	true Transaction mined and execution succeed
