@@ -38,14 +38,14 @@ function Success() {
         <a href={merkleProof.treeSummary}>{merkleProof.treeSummary}</a>
       </h1> */}
     <h3 className={styles.linkClass}>
-      Your Whitelist: <a className={styles.anchorStyles} target="_blank" href={merkleProof.whitelist}>{merkleProof.whitelist}</a>
+      Your Whitelist: <a className={styles.anchorStyles} rel="noreferrer" target="_blank" href={merkleProof.whitelist}>{merkleProof.whitelist}</a>
     </h3>
     <h3 className={styles.rootLink}>
-      Your RootHash: <a className={styles.anchorStyles} target="_blank" href={merkleProof.rootHash}>{merkleProof.rootHash}</a>
+      Your RootHash: <a className={styles.anchorStyles} rel="noreferrer" target="_blank" href={merkleProof.rootHash}>{merkleProof.rootHash}</a>
     </h3>
     <h3 className={styles.treeLink}>
       Your Tree Summary:{" "}
-      <a className={styles.anchorStyles} target="_blank" href={merkleProof.treeSummary}>{merkleProof.treeSummary}</a>
+      <a className={styles.anchorStyles} rel="noreferrer" target="_blank" href={merkleProof.treeSummary}>{merkleProof.treeSummary}</a>
     </h3>
     <hr className={styles.lineTwoColor}></hr>
     <div className={styles.headingFourWrapper}>
