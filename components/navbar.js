@@ -8,17 +8,20 @@ export default function NavBar() {
     return (
         <nav className={styles.navBar}>
             <div className={styles.treeImgContain}>
-                <Image 
-                    src={landingPageData.treeImg}
-                    width="60px"
-                    height="69px"
-                    alt="treeImg"
-                    className={styles.treeImg}
-                /> 
-
+                <Link href="/">
+                    <Image 
+                        src={landingPageData.treeImg}
+                        width="60px"
+                        height="69px"
+                        alt="treeImg"
+                        className={styles.treeImg}
+                    />
+                </Link>
             </div>
                 <div className={styles.title}>
-                    {landingPageData.title}
+                    <Link href="/" >
+                        {landingPageData.title}
+                    </Link>
                 </div>
                     <div className={styles.linkContainer}>
                         <Link href="/about">
