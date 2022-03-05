@@ -3,6 +3,7 @@ import "prismjs/themes/prism-okaidia.css";
 import Image from "next/image";
 import { useEffect } from "react";
 import styles from "../styles/documentation.module.css"
+import { documentationPageData } from "../data/pageData";
 
 export default function DocumentationSampleContract() {
     useEffect(() => {
@@ -154,7 +155,7 @@ export default function DocumentationSampleContract() {
             </ol>
             <div className={styles.imgCenter}>
             <Image
-                src="/../public/assets/sample_implementation_deploy.png"
+                src={documentationPageData.imageDeploy}
                 width="500px"
                 height="638px"
                 alt="deploy example"
@@ -165,13 +166,13 @@ export default function DocumentationSampleContract() {
             <h5 className={styles.removeInstance}>Review the Contract Instance</h5>
             <div className={styles.imgCenter}>
                 <Image
-                src="/../public/assets/sample_implementation_expand.png"
+                src={documentationPageData.imageExpandContract}
                 width="327px"
                 height="181px"
                 alt="deploy example"
                 />
                 <Image
-                src="/../public/assets/sample_implementation_rootHash.png"
+                src={documentationPageData.imageRootHash}
                 width="284px"
                 height="107px"
                 alt="deploy example"
@@ -191,7 +192,7 @@ export default function DocumentationSampleContract() {
 
             <div className={styles.imgCenter}>
                 <Image
-                src="/../public/assets/sample_implementation_mint.png"
+                src={documentationPageData.imageMint}
                 width="293px"
                 height="381px"
                 alt="deploy example"
