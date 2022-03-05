@@ -50,20 +50,20 @@ export default function Documentation() {
                 </p>
 
                 <p>
-                    After submitting your entire whitelist via the MerkleMe homepage, your frontend client will need to provide your Solidity Contract with a way of verifying that the connected user's wallet address is a part of this whitelist.
+                    After submitting your entire whitelist via the MerkleMe homepage, your frontend client will need to provide your Solidity Contract with a way of verifying that the connected user&#39;s wallet address is a part of this whitelist.
                 </p>
                 <p>
-                    The MerkleMe API provides your frontend with the "proof" (i.e. "key") that your contract needs.
+                    The MerkleMe API provides your frontend with the &#34;proof&#34; (i.e. &#34;key&#34;) that your contract needs.
                 </p>
                 <p>
                     In order to generate the correct proof, you need to pass the correct JSON data to the endpoint:
                 </p>
                 <ul>
                     <li>
-                        "whitelist": IPFS link to list of data, e.g. the original "whitelist" of users' wallet addresses. This was provided to you by the MerkleMe client when you submitted your data.
+                        &#34;whitelist&#34;: IPFS link to list of data, e.g. the original &#34;whitelist&#34; of user&#39;s wallet addresses. This was provided to you by the MerkleMe client when you submitted your data.
                     </li>
                     <li>
-                        "leafToVerify": Leaf, e.g. the wallet address of the user to be verified. This is the currently connected user's wallet address.
+                        &#34;leafToVerify&#34;: Leaf, e.g. the wallet address of the user to be verified. This is the currently connected user&#39;s wallet address.
                     </li>
                 </ul>
 
