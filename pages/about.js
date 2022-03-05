@@ -23,7 +23,7 @@ export default function About() {
                     <h1 className={styles.headingStyles}>What is Merkle Me?</h1>
 
                     <Image
-                        src="/../public/assets/merkleme_overview1.png"
+                        src={"/../public/assets/merkleme_overview1.png"}
                         width={700}
                         height={650}
                         alt="MerkleMe overview"
@@ -62,7 +62,7 @@ export default function About() {
                     </pre>
 
                     <Image
-                        src="/../public/assets/merkleme_overview2.png"
+                        src={"/../public/assets/merkleme_overview2.png"}
                         width={750}
                         height={407}
                         alt="MerkleMe overview"
