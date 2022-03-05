@@ -1,0 +1,38 @@
+.documentationHeading {
+    font-family: Montserrat;
+    font-size: 60px;
+    margin-left: 4%;
+}
+
+.documentationContainer {
+    width: 1305px;
+    margin-left: 5%;
+}
+
+.headingStyles {
+    font-family: Montserrat;
+    font-size: 25px;
+}
+
+.paragraphStyles {
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+.centerList {
+    text-align: center;
+}
+
+.removeInstance {
+    font-family: Montserrat;
+    font-size: 32px;
+}
+
+.imgCenter {
+    margin-left: 27%;
+    width: 60%;
+}
+
+.centerImg {
+    margin-left: 20%;
+}
