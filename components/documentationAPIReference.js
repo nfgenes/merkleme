@@ -1,6 +1,7 @@
 import Prism from "prismjs";
 import "prismjs/themes/prism-okaidia.css";
 import { useEffect } from "react";
+import styles from "../styles/documentation.module.css"
 
 export default function DocumentationAPIReference() {
     useEffect(() => {
@@ -11,31 +12,31 @@ export default function DocumentationAPIReference() {
     });
 
     return (
-        <div id="apiReference">
-            <h3>API Reference</h3>
-            <p>
+        <div className={styles.documentationBorder}>
+            <h3 className={styles.headingStyles}>API Reference</h3>
+            <p className={styles.paragraphStyles}>
                 The MerkleMe API is open source via the GPL-3.0 License and the public repo can be found <a href="https://github.com/nfgenes/merkleme_api" target="_blank" rel="noreferrer"><b>here</b></a>.
             </p>
-            <p>
+            <p className={styles.paragraphStyles}>
                 While the API consists of two endpoints, you will only need to use one of them to generate Merkle proofs.
             </p>
 
-            <h4>Generating a Merkle Proof</h4>
+            <h4 className={styles.headingStyles}>Generating a Merkle Proof</h4>
 
-            <p>
+            <p className={styles.paragraphStyles}>
                 ENDPOINT: https://merklemeapi.vincanger.repl.co/verify/proof
             </p>
 
-            <p>
+            <p className={styles.paragraphStyles}>
                 After submitting your entire whitelist via the MerkleMe homepage, your frontend client will need to provide your Solidity Contract with a way of verifying that the connected user&#39;s wallet address is a part of this whitelist.
             </p>
-            <p>
+            <p className={styles.paragraphStyles}>
                 The MerkleMe API provides your frontend with the &#34;proof&#34; (i.e. &#34;key&#34;) that your contract needs.
             </p>
-            <p>
+            <p className={styles.paragraphStyles}>
                 In order to generate the correct proof, you need to pass the correct JSON data to the endpoint:
             </p>
-            <ul>
+            <ul className={styles.paragraphStyles}>
                 <li>
                     &#34;whitelist&#34;: IPFS link to list of data, e.g. the original &#34;whitelist&#34; of user&#39;s wallet addresses. This was provided to you by the MerkleMe client when you submitted your data.
                 </li>
@@ -44,7 +45,7 @@ export default function DocumentationAPIReference() {
                 </li>
             </ul>
 
-            <h4>Axios Example</h4>
+            <h4 className={styles.headingStyles}>Axios Example</h4>
 
             <div>
                 <pre className="language-javascript">
@@ -76,7 +77,7 @@ export default function DocumentationAPIReference() {
             </div>
 
             <div>
-                <p>
+                <p className={styles.paragraphStyles}>
                     With your Proof returned, you must send this to your solidity contract, for example:
                 </p>
 
@@ -88,13 +89,13 @@ export default function DocumentationAPIReference() {
                     </code>
                 </pre>
 
-                <p>
+                <p className={styles.paragraphStyles}>
                     To learn what needs to be sent to your Solidity Contract for proper verification, please visit our <a 
                         href="https://github.com/nfgenes/merkleme/tree/main/example"
                         target="_blank"
                         rel="noreferrer"
                     >
-                        <b>Sample Demo NFT Minting Contract</b>
+                        <b className={styles.paragraphStyles}>Sample Demo NFT Minting Contract</b>
                     </a>
                 </p>
             </div>
