@@ -14,7 +14,8 @@ export default function NavBar() {
                     height="69px"
                     alt="treeImg"
                     className={styles.treeImg}
-                />
+                /> 
+
             </div>
                 <div className={styles.title}>
                     {landingPageData.title}
