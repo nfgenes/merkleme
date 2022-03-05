@@ -13,4 +13,11 @@ verify(bytes32[] proof, bytes32 root, bytes32 leaf) → bool
 ```
 
 ## MerkleMe Overview
-![MerkleMe Overview](https://github.com/nfgenes/merkleme/blob/main/public/assets/merkleme_overview.png)
+
+### Upload, generate, publish
+
+![MerkleMe Overview](https://github.com/nfgenes/merkleme/blob/main/public/assets/merkleme_overview1.png)
+
+### Verify
+
+![MerkleMe Overview](https://github.com/nfgenes/merkleme/blob/main/public/assets/merkleme_overview2.png)
