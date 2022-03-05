@@ -1,10 +1,32 @@
 .headingStyles {
     font-family: Montserrat;
-    font-size: 50px;
+    font-size: 38;
+    margin-left: 270px;
 }
 
 .Container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+}
+
+.Content {
     max-width: 1306px;
+    /* background-color: green; */
+}
+
+.paragraphStyles {
+    font-family: Montserrat;
+    font-style: normal;
+    line-height: 29px;
+    text-align: left;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: left;
+    /* position: absolute; */
+    width: 963px;
+    /* height: 199px; */
+    left: 279px;
+    /* top: 150px; */
+    color: #000000;
 }
