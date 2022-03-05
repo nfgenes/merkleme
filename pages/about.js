@@ -43,8 +43,8 @@ export default function About() {
 
                     <p className={styles.paragraphStyles}>
                         Once the Merkle tree is created, the developer only needs to add the root hash and the <a href="https://docs.openzeppelin.com/contracts/3.x/api/cryptography#MerkleProof" target="_blank" rel="noreferrer">
-                        <b>OpenZeppelin MerkleProof</b></a> utility to their minting contract. The developer's front end will then be able to grab 
-                        a user's address (likely from their wallet) and use it to generate a Merkle proof on the fly for that given address via the 
+                        <b>OpenZeppelin MerkleProof</b></a> utility to their minting contract. The developer&#39;s front end will then be able to grab 
+                        a user&#39;s address (likely from their wallet) and use it to generate a Merkle proof on the fly for that given address via the 
                         MerkeMe backend API.
                     </p>
 
