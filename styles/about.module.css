@@ -1,0 +1,10 @@
+.headingStyles {
+    font-family: Montserrat;
+    font-size: 50px;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1306px;
+}
