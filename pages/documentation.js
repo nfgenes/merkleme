@@ -70,7 +70,7 @@ export default function Documentation() {
                 <h4>Axios Example</h4>
 
                 <div>
-                    <pre class="language-javascript">
+                    <pre className="language-javascript">
                         <code>
                             {`
                                 const requestBody = {
@@ -103,7 +103,7 @@ export default function Documentation() {
                         With your Proof returned, you must send this to your solidity contract, for example:
                     </p>
                     
-                    <pre class="language-javascript">
+                    <pre className="language-javascript">
                         <code>
                             {`
                                 const nftTxn = await connectedContract.mintNFT(response.proof);
