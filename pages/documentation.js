@@ -7,7 +7,7 @@ export default function Documentation() {
         <div>
             <NavBar />
             <h1>Documentation</h1>
-            {/* <DocumentationAPIReference /> */}
+            <DocumentationAPIReference />
 
             <DocumentationSampleContract />
         </div>

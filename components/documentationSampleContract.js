@@ -54,7 +54,7 @@ export default function DocumentationSampleContract() {
 
             <p>
                 The sample contract can be viewed and deployed on 
-                <a href="https://remix.ethereum.org/#url=https://github.com/nfgenes/merkleme/blob/main/example/sampleContract.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.4+commit.c7e474f2.js" target="_blank" rel="noreffer"><b>This Remix Instance</b></a>
+                <a href="https://remix.ethereum.org/#url=https://github.com/nfgenes/merkleme/blob/main/example/sampleContract.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.4+commit.c7e474f2.js" target="_blank" rel="noreferrer"><b>This Remix Instance</b></a>
             </p>
 
             <h4>Step by Step Example Implementation</h4>
