@@ -1,12 +1,9 @@
-import { informationData } from "../data/information";
-import Image from "next/image";
+import { formPageData } from "../data/pageData";
 import styles from "../styles/Form.module.css";
 import useGlobalState from "../store/global";
 import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
-import { landingPageData } from "../data/landingpage";
-
-
+import NavBar from "../components/navbar";
 
 export default function Form() {
   const router = useRouter();
@@ -31,25 +28,12 @@ export default function Form() {
   return (
     <div className={styles.container}>
       {/* Navbar Section */}
-      <nav className={styles.navBar}>
-      <div className={styles.treeImgContain}>
-                <Image 
-                    src={landingPageData.treeImg}
-                    width="60px"
-                    height="69px"
-                    alt="treeImg"
-                    className={styles.treeImg}
-                />
-            </div>
-                <div className={styles.title}>
-                    {landingPageData.title}
-                </div>
-      </nav>
+          <NavBar />
       {/* Hero Section */}
     <main className={styles.heroMain}>
         <section className={styles.heroSection}>
         <div className={styles.heroContainer}>
-            <div className={styles.heroHeading}>{informationData.heading}</div>
+            <div className={styles.heroHeading}>{formPageData.heading}</div>
         </div>
 
         <section className={styles.formContainer}>
@@ -67,7 +51,7 @@ export default function Form() {
             <div className={styles.formStyles}>
                 <div>
                 <label className={styles.collectionTitle} htmlFor="name">
-                    {informationData.collectionTitle}
+                    {formPageData.collectionTitle}
                 </label>
                 <div className={styles.labelWrapper}>
                     <input
@@ -88,7 +72,7 @@ export default function Form() {
                 {/* Tagging for the email form*/}
                 <div>
                 <label className={styles.emailStyles} htmlFor="email">
-                    {informationData.emailTitle}
+                    {formPageData.emailTitle}
                 </label>
                 <div className={styles.labelWrapper}>
                     <input
@@ -109,7 +93,7 @@ export default function Form() {
             <div className={styles.buttonWrapper}>
                 {/* <Link href="/address" passHref={true}> */}
                 <button className={styles.nextStyles}>
-                {informationData.nextButton}
+                {formPageData.nextButton}
                 </button>
                 {/* </Link> */}
             </div>

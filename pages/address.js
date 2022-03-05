@@ -1,4 +1,4 @@
-import { addressPage } from "../data/addresspage";
+import { pageData, addressPageData } from "../data/pageData";
 import Image from "next/image";
 import styles from "../styles/address.module.css";
 import useGlobalState from "../store/global";
@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { BounceLoader } from "react-spinners";
 import toast from "react-hot-toast";
+import NavBar from "../components/navbar";
 
 export default function Address() {
   const [userDataAvailable, setUserDataAvailable] = useState(false);
@@ -69,29 +70,17 @@ export default function Address() {
 
   return (
     <main className={styles.main}>
-      <nav className={styles.navBar}>
-        <div className={styles.treeImgContain}>
-          <Image
-            src={addressPage.treeImgAsset}
-            width="60px"
-            height="69px"
-            alt="treeImg"
-            className={styles.treeImg}
-          />
-        </div>
-        <div className={styles.title}>{addressPage.merkleTitle}</div>
-      </nav>
-
+      <NavBar />
       <section className={styles.addressSection}>
         <div className={styles.userData}>
           <div>Collection name: {collectionName}</div>
           {email && <div>Email: {email}</div>}
         </div>
-        <div className={styles.heading}>{addressPage.addressHeading}</div>
+        <div className={styles.heading}>{addressPageData.addressHeading}</div>
 
         <div className={styles.addressFormSection}>
           <textarea
-            placeholder={addressPage.placeholderText}
+            placeholder={addressPageData.placeholderText}
             rows="20"
             cols="40"
             className={styles.textarea}
@@ -104,7 +93,7 @@ export default function Address() {
               onClick={() => generateMerkleProof(email, whitelist)}
               className={styles.nextStyles}
             >
-              {addressPage.merkleButton}
+              {addressPageData.merkleButton}
               <BounceLoader size={20} color={"#21327d"} loading={loading} />
             </button>
           </div>

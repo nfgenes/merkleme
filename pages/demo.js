@@ -1,4 +1,4 @@
-import { demoPageData } from "../data/demopage";
+import { demoPageData } from "../data/pageData";
 import styles from "../styles/demo.module.css";
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
