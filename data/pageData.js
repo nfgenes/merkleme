@@ -4,7 +4,8 @@ export const pageData = {
 };
 
 export const aboutPageData = {
-
+    overviewOne: "/assets/merkleme_overview1.png",
+    overviewTwo: "/assets/merkleme_overview2.png",
 };
 
 export const addressPageData = {

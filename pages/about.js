@@ -4,6 +4,7 @@ import Image from "next/image";
 import Prism from "prismjs";
 import "prismjs/themes/prism-okaidia.css";
 import { useEffect } from "react";
+import { aboutPageData } from "../data/pageData";
 
 export default function About() {
     useEffect(() => {
@@ -23,7 +24,7 @@ export default function About() {
                     <h1 className={styles.headingStyles}>What is Merkle Me?</h1>
 
                     <Image
-                        src={"/../public/assets/merkleme_overview1.png"}
+                        src={aboutPageData.overviewOne}
                         width={700}
                         height={650}
                         alt="MerkleMe overview"
@@ -62,7 +63,7 @@ export default function About() {
                     </pre>
 
                     <Image
-                        src={"/../public/assets/merkleme_overview2.png"}
+                        src={aboutPageData.overviewTwo}
                         width={750}
                         height={407}
                         alt="MerkleMe overview"
