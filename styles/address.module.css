@@ -1,3 +1,26 @@
+.navBar {
+  display: flex;
+  align-items: center;
+  flex: 0.2;
+}
+
+.title {
+  font-family: Vibur;
+  font-size: 30px;
+  margin-left: 1%;
+  margin-top: 2%;
+}
+
+.treeImgContain {
+  padding-top: 20px;
+  margin-left: 67px;
+}
+
+.tree {
+  object-fit: contain;
+}
+
+
 
 .addressSection {
   flex: 1;

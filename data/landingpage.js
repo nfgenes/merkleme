@@ -8,4 +8,5 @@ export const landingPageData = {
   aboutTitle: "About",
   teamTitle: "Team",
   documentationTitle: "Documentation",
+  demoTitle: "Demo",
 };

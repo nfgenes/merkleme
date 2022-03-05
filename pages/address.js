@@ -69,11 +69,11 @@ export default function Address() {
 
   return (
     <main className={styles.main}>
-      <nav className={styles.nav}>
+      <nav className={styles.navBar}>
         <div className={styles.treeImgContain}>
           <Image
             src={addressPage.treeImgAsset}
-            width="50px"
+            width="60px"
             height="69px"
             alt="treeImg"
             className={styles.treeImg}

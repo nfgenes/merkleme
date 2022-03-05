@@ -4,6 +4,9 @@ import styles from "../styles/Form.module.css";
 import useGlobalState from "../store/global";
 import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
+import { landingPageData } from "../data/landingpage";
+
+
 
 export default function Form() {
   const router = useRouter();
@@ -28,19 +31,20 @@ export default function Form() {
   return (
     <div className={styles.container}>
       {/* Navbar Section */}
-    <nav className={styles.nav}>
-        <div className={styles.treeImgContain}>
-        <Image
-            src={informationData.treeImg}
-            width="50px"
-            height="69px"
-            alt="treeImg"
-            className={styles.treeImg}
-        />
-        </div>
-        <div className={styles.title}>{informationData.title}</div>
-    </nav>
-
+      <nav className={styles.navBar}>
+      <div className={styles.treeImgContain}>
+                <Image 
+                    src={landingPageData.treeImg}
+                    width="60px"
+                    height="69px"
+                    alt="treeImg"
+                    className={styles.treeImg}
+                />
+            </div>
+                <div className={styles.title}>
+                    {landingPageData.title}
+                </div>
+      </nav>
       {/* Hero Section */}
     <main className={styles.heroMain}>
         <section className={styles.heroSection}>
