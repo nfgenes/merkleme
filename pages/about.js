@@ -1,5 +1,5 @@
 export default function About() {
     return (
-        <div>Orlundo</div>
+        <div>Orlundo Hubbard</div>
     )
 }
