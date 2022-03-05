@@ -3,6 +3,14 @@
     align-items: center;
     flex: 0.2;
 }
+
+.title {
+    font-family: Vibur;
+    font-size: 30px;
+    margin-left: 1%;
+    margin-top: 2%;
+}
+
 .treeImgContain {
     padding-top: 6px;
     margin-left: 67px;
@@ -12,41 +20,16 @@
     object-fit: contain;
 }
 
-.title {
-    font-family: Vibur;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 72px;
-    margin-left: 16px;
-    padding-top: 17px;
-    cursor: pointer;
-    color: var(--black);
-}
-
-.aboutStyle {
-    font-family: Montserrat;
-    font-weight: 500;
-    cursor: pointer;
-    margin-top: 12px;
-    margin-right: 24px;
-    margin-left: 900px;
-    transition: 0.2s ease-in-out 0.2s;
-}
-
-.teamStyle {
-    font-family: Montserrat;
-    font-weight: 500;
-    cursor: pointer;
-    margin-top: 12px;
-    margin-right: 24px;
-}
-
-.documentationStyle {
-    font-family: Montserrat;
-    font-weight: 500;
-    cursor: pointer;
-    margin-top: 12px;
+.linkContainer {
     display: flex;
-    justify-content: flex-end;
+    margin-top: 2%;
+    margin-left: 55%;
+    gap: 20px;
 }
+
+.links {
+    font-family: Montserrat;
+    font-weight: 500;
+    cursor: pointer;
+}
+

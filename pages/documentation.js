@@ -2,7 +2,7 @@ import { documentationPage } from "../data/documentPage";
 import styles from "../styles/documentation.module.css";
 import Image from "next/image";
 
-import NavBar from "../components/navbar";
+
 
 export default function Documentation() {
 
@@ -19,7 +19,6 @@ export default function Documentation() {
                 alt="tree"
                 />
             </div>
-            <NavBar />
             </nav>
 
             {/* Main Section */}

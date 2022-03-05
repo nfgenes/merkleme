@@ -9,7 +9,7 @@ import NavBar from "../components/navbar";
 export default function Home() {
   return (
     <div className={styles.home}>
-        <NavBar />
+      <NavBar/>
       {/* Beginning of hero section */}
       <main className={styles.main}>
         <section className={styles.leftSection}>
