@@ -28,9 +28,9 @@ export default function NavBar() {
                 <Link href="/about">
                     <div className={styles.links}>{landingPageData.aboutTitle}</div>
                 </Link>
-                <Link href="/team">
+                {/* <Link href="/team">
                     <div className={styles.links}>{landingPageData.teamTitle}</div>
-                </Link>
+                </Link> */}
                 <Link href="/documentation">
                     <div className={styles.links}>{landingPageData.documentationTitle}</div>
                 </Link>

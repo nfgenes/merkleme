@@ -25,7 +25,10 @@ export const demoPageData = {
 };
 
 export const documentationPageData = {
-    
+    imageDeploy: "/assets/sample_implementation_deploy.png",
+    imageExpandContract: "/assets/sample_implementation_expand.png",
+    imageRootHash: "/assets/sample_implementation_rootHash.png",
+    imageMint: "/assets/sample_implementation_mint.png",
 };
 
 export const formPageData = {
