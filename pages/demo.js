@@ -5,6 +5,7 @@ import { useState, useRef, useEffect } from "react";
 import toast from "react-hot-toast";
 import { BounceLoader } from "react-spinners";
 import axios from "axios";
+import NavBar from "../components/navbar";
 
 export default function Demo() {
   const formRef = useRef();
@@ -48,18 +49,7 @@ export default function Demo() {
   return (
     <div>
       <main>
-        <nav className={styles.demoNavbar}>
-          <div className={styles.demoTreeContainer}>
-            <Image
-              src={demoPageData.treeImg}
-              width="50px"
-              height="69px"
-              className={styles.demoTree}
-              alt="tree"
-            />
-          </div>
-          <div className={styles.demoTitle}>{demoPageData.title}</div>
-        </nav>
+        <NavBar />
       </main>
 
       {/* Main section */}

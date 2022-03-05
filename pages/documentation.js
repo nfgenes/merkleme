@@ -17,20 +17,8 @@ export default function Documentation() {
 
     return (
         <div>
-            {/* Navbar Section */}
-            <nav className={styles.documentationNavbar}>
-                <div className={styles.treeImgContain}>
-                <Image
-                src={documentationPage.treeImg}
-                width="50px"
-                height="69px"
-                className={styles.tree}
-                alt="tree"
-                />
-            </div>
             <NavBar />
-            </nav>
-
+            
             {/* Main Section */}
             <section>
                 <h1>Documentation</h1>
