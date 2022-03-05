@@ -1,6 +1,6 @@
 import React from "react";
 import useGlobalState from "../store/global";
-import { successPageData } from "../data/successpage";
+import { successPageData } from "../data/pageData";
 import styles from "../styles/success.module.css";
 import Image from "next/image";
 import Link from "next/link";
