@@ -1,6 +1,7 @@
 export const pageData = {
     treeImg: "/assets/tree.png",
     title: "MerkleMe",
+    betaTitle: "(beta)",
 };
 
 export const aboutPageData = {
