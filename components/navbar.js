@@ -16,13 +16,14 @@ export default function NavBar() {
                         alt="treeImg"
                         className={styles.treeImg}
                     />
-                </Link>
+                </Link> 
             </div>
             <div className={styles.title}>
                 <Link href="/" >
                     {pageData.title}
                 </Link>
             </div>
+            <div className={styles.betaStyles}>{pageData.betaTitle}</div>
 
             <div className={styles.linkContainer}>
                 <Link href="/about">
